@@ -1,17 +1,15 @@
-""" general settings
 syntax on
-filetype plugin indent on
-set nocompatible
-set encoding=utf-8
-set mouse=a
-set number
-set cursorline
-set cursorcolumn
-set backspace=2
-set background=dark
-set laststatus=2
-set colorcolumn=80
-set t_Co=256
-set expandtab
+au BufNewFile,BufRead *.thtml set filetype=html
+au BufNewFile,BufRead Pkgfile set filetype=sh
+set textwidth=100
 set tabstop=2
 set shiftwidth=2
+set expandtab
+set ruler
+set paste
+set nobackup
+set nowritebackup
+set noswapfile
+set undofile
+autocmd FileType * set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab

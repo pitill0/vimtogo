@@ -1,0 +1,15 @@
+syntax on
+au BufNewFile,BufRead *.thtml set filetype=html
+au BufNewFile,BufRead Pkgfile set filetype=sh
+set textwidth=100
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set ruler
+set paste
+set nobackup
+set nowritebackup
+set noswapfile
+set undofile
+autocmd FileType * set tabstop=2|set shiftwidth=2|set expandtab
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
